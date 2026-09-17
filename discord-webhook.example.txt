@@ -1,0 +1,10 @@
+1. Dans Discord, ouvre le salon qui doit recevoir les dossiers.
+2. Paramètres du salon > Intégrations > Webhooks > Nouveau webhook.
+3. Copie l’URL du webhook. Ne la partage jamais dans une page HTML publique.
+4. Lance le site avec cette commande PowerShell, en remplaçant la valeur :
+
+$env:DISCORD_WEBHOOK_URL="COLLEZ_ICI_L_URL_DU_WEBHOOK"; node server.mjs
+
+5. Ouvre ensuite http://localhost:3000/depot-dossier.html.
+
+Pour publier le site, définissez DISCORD_WEBHOOK_URL dans les variables secrètes de votre hébergeur, puis exécutez node server.mjs.
